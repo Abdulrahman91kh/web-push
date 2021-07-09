@@ -9,7 +9,7 @@
 				console.log('[SERVICE WORKER]', sw);
 			});
 
-			const subscribe = () => {
+			const subscribe = async () => {
 				const sw = await navigator.serviceWorker.ready;
 				const push = await sw.pushManager.subscribe({
 					userVisibleOnly: true,
